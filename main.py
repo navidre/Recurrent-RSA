@@ -18,8 +18,9 @@ from bayesian_agents.joint_rsa import RSA
 
 
 urls = [
-	"https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Arriva_T6_nearside.JPG/1200px-Arriva_T6_nearside.JPG",
-	"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/First_Student_IC_school_bus_202076.jpg/220px-First_Student_IC_school_bus_202076.jpg"
+	"/home/navid/projects/my_work/image-kg-remote/fusion_wpkg/sample_imgs/attributes/car1.jpg",
+	# "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Arriva_T6_nearside.JPG/1200px-Arriva_T6_nearside.JPG",
+	# "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/First_Student_IC_school_bus_202076.jpg/220px-First_Student_IC_school_bus_202076.jpg"
 	]
 
 # code is written to be able to jointly infer speaker's rationality and neural model, but for simplicity, let's assume these are fixed
