@@ -16,7 +16,7 @@ class Model:
 		
 		self.seg2idx,self.idx2seg=dictionaries
 		self.path=path
-		self.vocab_path='data/vocab.pkl'
+		self.vocab_path='./recurrent_rsa/data/vocab.pkl'
 		self.encoder_path=TRAINED_MODEL_PATH+path+"-encoder-5-3000.pkl"
 		self.decoder_path=TRAINED_MODEL_PATH+path+"-decoder-5-3000.pkl"
 
@@ -93,7 +93,7 @@ class Model:
 		else:
 			from utils.sample import to_var,load_image,load_image_from_path
 			self.features = [self.encoder(to_var(load_image_from_path(url, self.transform), volatile=True)) for url in images]
-			self.default_image = self.encoder(to_var(load_image_from_path("data/default.jpg", self.transform), volatile=True))
+			self.default_image = self.encoder(to_var(load_image_from_path("./recurrent_rsa/data/default.jpg", self.transform), volatile=True))
 
 
 			# self.speakers = [Model(path) for path in paths]

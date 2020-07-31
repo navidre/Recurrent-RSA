@@ -1,7 +1,7 @@
 from collections import defaultdict
 IMG_DATA_PATH="charpragcap/resources/visual_genome_data/"
 REP_DATA_PATH="charpragcap/resources/resnet_reps/"
-TRAINED_MODEL_PATH="data/models/"
+TRAINED_MODEL_PATH="./recurrent_rsa/data/models/"
 WEIGHTS_PATH="charpragcap/resources/weights/"
 S0_WEIGHTS_PATH="s0_weights"
 S0_PRIME_WEIGHTS_PATH="s0_prime_weights"
