@@ -57,5 +57,4 @@ def get_features(file_path):
 		start_from=list(""),
 		initial_world_prior=initial_world_prior)
 
-	print("Literal caption:\n",literal_caption)
-	print("Pragmatic caption:\n",pragmatic_caption)
+	return literal_caption[0][0], pragmatic_caption[0][0]

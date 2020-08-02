@@ -73,7 +73,7 @@ def ana_greedy(rsa,initial_world_prior,speaker_rationality,speaker, target, pass
 	world=RSA_World(target=target,rationality=speaker_rationality,speaker=speaker)
 
 	probs=[]
-	for timestep in tqdm(range(len(start_from)+1,max_sentence_length)):
+	for timestep in range(len(start_from)+1,max_sentence_length):
 
 		state.timestep=timestep
 		s = rsa.speaker(state=state,world=world,depth=depth)
@@ -141,7 +141,7 @@ def ana_beam(rsa,initial_world_prior,speaker_rationality, target,speaker, pass_p
 	final_sentences=[]
 
 	toc = time.time()
-	for timestep in tqdm(range(len(start_from)+1,max_sentence_length)):
+	for timestep in range(len(start_from)+1,max_sentence_length):
 		
 		
 		state.timestep=timestep
